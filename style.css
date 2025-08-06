@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+label {
+  display: block;
+  margin: 10px 0;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+}
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #00c853;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+a {
+  display: block;
+  margin-top: 20px;
+  color: #00c853;
+}
