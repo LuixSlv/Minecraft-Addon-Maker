@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Criador de Addons - Minecraft Bedrock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Criador de Addons - Minecraft Bedrock</h1>
+
+    <label>Nome do Addon:
+      <input type="text" id="addonName" placeholder="Ex: MeuAddon" />
+    </label>
+
+    <label>UUID (gerado automaticamente):
+      <input type="text" id="uuid" readonly />
+    </label>
+
+    <label>Nome da Entidade:
+      <input type="text" id="entityName" placeholder="Ex: bulbasaur" />
+    </label>
+
+    <label>Identificador:
+      <input type="text" id="identifier" placeholder="Ex: meuaddon:bulbasaur" />
+    </label>
+
+    <label>Texto do lang (pt_BR):
+      <input type="text" id="langText" placeholder="Ex: Bulbasaur" />
+    </label>
+
+    <label>URL da Textura PNG:
+      <input type="text" id="textureURL" placeholder="Link direto da imagem PNG" />
+    </label>
+
+    <button onclick="generateAddon()">Gerar Addon</button>
+    <a id="downloadLink" style="display:none" download="addon.mcaddon">Baixar Addon</a>
+  </div>
+
+  <script src="libs/JSZip.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
